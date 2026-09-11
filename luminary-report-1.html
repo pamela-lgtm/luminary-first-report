@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing Performance Report — 9313 Luminary Blvd | Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#008C82;--teal-deep:#00625B;--gold:#C9A227;--charcoal:#1A1A1A;
+--body:#1F1F1F;--muted:#5A5651;--strong:#0F0F0F;--line:#E2DED7;--paper:#FBFAF7;--panel:#F3F1EC;
+--warn:#C0705A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);font-family:'Jost',system-ui,sans-serif;
+font-weight:400;font-size:16.5px;line-height:1.68}
+.wrap{max-width:900px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--charcoal)}
+h1{font-size:2.6rem;line-height:1.1;margin:0 0 .4rem}
+h2{font-size:1.85rem;line-height:1.2;margin:0 0 .8rem}
+h3{font-size:1.2rem;margin:1.4rem 0 .45rem}
+p{margin:0 0 1rem;max-width:74ch}
+b,strong{font-weight:600;color:var(--strong)}
+ul{margin:0 0 1rem;padding-left:1.2rem;max-width:74ch}
+li{margin-bottom:.5rem}
+
+.mast{background:var(--charcoal);color:#F5F3EE;padding:28px 0 30px}
+.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.mark{width:33px;height:33px;border-radius:50%;background:var(--teal);color:#fff;
+font-family:'Cormorant Garamond',serif;font-size:21px;display:inline-flex;
+align-items:center;justify-content:center;flex:0 0 auto;transform:translateY(5px)}
+.brandname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#F5F3EE}
+.mast .tag{color:#A9A49C;font-size:.83rem;margin-left:auto;text-align:right;line-height:1.5}
+.kicker{color:var(--gold);font-size:.9rem;margin:22px 0 4px;letter-spacing:.02em}
+.mast h1{color:#FBFAF7;margin-top:4px}
+.mast .sub{color:#B8B2A8;margin:0;font-size:1rem}
+
+.about{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 24px;margin:26px 0 0}
+.about p:last-child{margin-bottom:0}
+
+section{padding:38px 0;border-top:1px solid var(--line)}
+.snum{color:var(--teal-deep);font-size:.9rem;margin:0 0 .2rem;letter-spacing:.03em}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0 0 22px}
+.st{background:#fff;padding:19px}
+.st .v{font-family:'Cormorant Garamond',serif;font-size:2.1rem;line-height:1.05;color:var(--teal-deep)}
+.st .v.warn{color:var(--warn)}
+.st .k{font-size:.85rem;color:var(--muted);margin-top:6px;line-height:1.45}
+.statnote{font-size:.87rem;color:var(--muted);margin:-10px 0 22px}
+
+.pull{border-left:4px solid var(--gold);background:#fff;padding:19px 24px;
+border-radius:0 8px 8px 0;margin:0 0 22px}
+.pull p:last-child{margin-bottom:0}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:21px 24px;margin:0 0 20px}
+.box h3{margin-top:0}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+
+.tscroll{overflow-x:auto;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:.9rem;background:#fff;min-width:540px}
+th{background:var(--panel);color:var(--strong);font-weight:600;text-align:left;
+padding:10px 12px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.hi td{background:#E6F3F1;font-weight:600}
+td.num,th.num{text-align:right;white-space:nowrap}
+caption{caption-side:bottom;text-align:left;color:var(--muted);font-size:.86rem;padding-top:9px}
+
+.portals{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 16px}
+.portal{background:#fff;border:1px solid var(--line);border-radius:20px;padding:7px 15px;font-size:.89rem}
+.portal::before{content:"✓ ";color:var(--teal)}
+
+.rec{background:var(--teal);color:#fff;padding:34px 0 32px;margin-top:38px}
+.rec h2{color:#fff}
+.rec p{color:#DDEFEC}
+.rec b,.rec strong{color:#fff}
+.rec .big{font-family:'Cormorant Garamond',serif;font-size:3.2rem;line-height:1;color:#fff;margin:6px 0 4px}
+.rec table{background:rgba(255,255,255,.06);color:#EAF6F4;min-width:460px}
+.rec th{background:rgba(255,255,255,.12);color:#fff;border-bottom-color:rgba(255,255,255,.25)}
+.rec td{border-bottom-color:rgba(255,255,255,.15)}
+.rec tr.hi td{background:rgba(255,255,255,.16);color:#fff}
+
+footer{background:var(--charcoal);color:#B8B2A8;padding:32px 0;font-size:.89rem}
+footer .sig{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);margin-bottom:8px}
+footer a{color:#8FD2CB}
+
+@media(max-width:720px){
+body{font-size:16px}h1{font-size:2rem}h2{font-size:1.5rem}
+.mast .tag{margin-left:0;width:100%;text-align:left}
+.rec .big{font-size:2.6rem}
+}
+@media print{body{background:#fff}section{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">V</span>
+      <span class="brandname">Verandah Properties, LLC</span>
+      <span class="tag">Report 1 of an ongoing series<br>Issued September 11, 2026</span>
+    </div>
+    <p class="kicker">Marketing Performance Report · Full Campaign to Date</p>
+    <h1>9313 Luminary Boulevard</h1>
+    <p class="sub">Orlando, FL 32827 · Alora at Laureate Park, Lake Nona · 3 bed / 3.5 bath · 2,037 sq ft · MLS O6437426</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="about">
+    <p><b>About this report.</b> This is a complete picture of the marketing campaign on your property from the day it was listed through today — August 31 to September 11, 2026. It is the first in a reporting series. From here forward you will receive an updated version every Friday, showing what changed during the week alongside the running campaign totals, so you can see both the detail and the direction.</p>
+  </div>
+
+<section>
+  <p class="snum">Section One</p>
+  <h2>Where the property stands today</h2>
+  <div class="stats">
+    <div class="st"><div class="v">$3,150</div><div class="k">Current asking rent</div></div>
+    <div class="st"><div class="v">11</div><div class="k">Days marketed to date</div></div>
+    <div class="st"><div class="v warn">1</div><div class="k">Inquiry received since listing</div></div>
+    <div class="st"><div class="v">0</div><div class="k">Comparable homes leased in this segment</div></div>
+  </div>
+  <p class="statnote">Listed August 31, 2026, available August 28. Market figures from Stellar MLS as of September 11, 2026.</p>
+
+  <h3>The short version</h3>
+  <p>Your home is brand new, beautifully finished, priced well below the only other comparable listing on the market, and live on every major portal. In eleven days it has produced <b>one inquiry.</b></p>
+  <p>We want to bring this to you now rather than in three weeks, because eleven days is early enough to act cleanly. A listing that is still fresh gets the visibility a new listing gets. A listing that has been corrected at day forty-five is being corrected after that window has closed.</p>
+  <p>One inquiry in eleven days is not a conversion problem or a photography problem. Nobody is raising a hand at all, which almost always means the home is not appearing in the searches renters are actually running. Our recommendation is in the final section.</p>
+</section>
+
+<section>
+  <p class="snum">Section Two</p>
+  <h2>Campaign activity, August 31 to September 11</h2>
+  <div class="stats">
+    <div class="st"><div class="v warn">1</div><div class="k">Inquiries</div></div>
+    <div class="st"><div class="v">0</div><div class="k">Showings</div></div>
+    <div class="st"><div class="v">0</div><div class="k">Applications</div></div>
+    <div class="st"><div class="v">0.6</div><div class="k">Inquiries per week</div></div>
+  </div>
+  <p>On a brand-new three-bedroom home with 3.5 baths, a two-car garage with an EV charger, smart-home features and full Lake Nona amenity access, we would expect several inquiries per day in a functioning market at the right price. At that rate this home would have generated dozens of inquiries by now.</p>
+
+  <div class="pull">
+    <p><b>A single inquiry tells us something specific.</b> When a listing is getting views but not inquiries, the problem is the listing itself — photography, copy, or presentation. When a listing is not generating inquiries at all, the problem is upstream: the home is not showing up in the search results renters are looking at. That is a price-band problem, not a marketing problem.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Three</p>
+  <h2>Your competition — all of it</h2>
+  <p>There is exactly one other comparable home on the market. It is four doors down.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Property</th><th class="num">Beds</th><th class="num">Sq ft</th><th class="num">Built</th><th class="num">Asking</th><th class="num">Per sq ft</th><th class="num">Days</th></tr></thead>
+    <tbody>
+      <tr><td>9305 Luminary Blvd <span style="color:var(--muted)">(Alora)</span></td><td class="num">3 / 3.5</td><td class="num">2,004</td><td class="num">2026</td><td class="num">$3,800</td><td class="num">$1.90</td><td class="num">10</td></tr>
+      <tr class="hi"><td>9313 Luminary Blvd — your home</td><td class="num">3 / 3.5</td><td class="num">2,037</td><td class="num">2026</td><td class="num">$3,150</td><td class="num">$1.55</td><td class="num">11</td></tr>
+    </tbody>
+    <caption>Both listed within one day of each other. Neither has leased. No comparable home in this segment has leased in the MLS.</caption>
+  </table>
+  </div>
+
+  <p>Your home is <b>larger</b>, priced <b>$650 per month lower</b>, and costs <b>18% less per square foot</b> than the only listing you are competing against. On paper you are the better value by a wide margin.</p>
+  <p>It has produced one inquiry.</p>
+
+  <h3>Why the $3,800 listing is not a benchmark</h3>
+  <p>It is tempting to look at a neighbor asking $3,800 and conclude there is room above $3,150. We would caution strongly against that reading.</p>
+  <ul>
+    <li><b>It has not leased either.</b> Ten days, same as yours, same result. A price nobody has paid is not evidence of value.</li>
+    <li><b>It is not supported by the analysis.</b> When we set your price we looked at a broader set of Lake Nona homes, including larger ones, to establish what this product actually commands. $3,800 sits well outside what that analysis supports at this size.</li>
+    <li><b>That owner closed on the home in August.</b> A brand-new investor with a fresh mortgage and an aspirational asking price is a very common pattern, and those listings typically correct after a month or two of silence — often sharply.</li>
+  </ul>
+  <p>The risk of anchoring to it is real. If we hold at $3,150 because $3,800 makes us look reasonable, and that listing drops to $3,100 in October, we have spent six weeks of vacancy to end up behind where we started.</p>
+
+  <div class="pull">
+    <p><b>The most important number in this report is zero.</b> No home in this segment has leased in the MLS. We have no proof of demand at $3,800, at $3,150, or at any price — only two listings sitting side by side, both quiet. In that situation the correct move is not to match the other listing. It is to find the price where the phone rings.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Four</p>
+  <h2>How we arrived at $3,150, and what has changed</h2>
+  <p>We want you to see that the original price was reasoned, not guessed — and why we are now recommending we move off it.</p>
+  <p>When we priced this home there were no leased comparables for this product, because it did not exist yet. So we widened the analysis, looking at a broader set of Lake Nona homes including larger ones, and set $3,150 as a defensible number against what that range supported. It was the right call with the information available at the time.</p>
+  <p>What we did not have then, and do have now, is <b>eleven days of live market response.</b> That is real data, and it outranks any comparable analysis. The market has now told us something that no spreadsheet could: at $3,150, renters are not finding this home.</p>
+
+  <h3>The $3,000 line</h3>
+  <p>Renters do not browse by square footage or by finish level. They set a maximum price and browse what comes back. On every major portal, the filters step in round numbers, and <b>$3,000 is one of the most heavily used ceilings there is.</b></p>
+  <p>At $3,150 your home does not appear in a single search capped at $3,000. Not lower in the results — absent from them entirely. The photographs, the EV charger, the smart locks, the amenity package, none of it is ever seen, because the listing was filtered out before it could be.</p>
+  <p>That is the most plausible explanation for one inquiry in eleven days on a home this attractive.</p>
+</section>
+
+<section>
+  <p class="snum">Section Five</p>
+  <h2>Where your home is visible</h2>
+  <p>Listing verified live — checked September 11, 2026, in a private browser window without logging in, exactly as a prospective renter would see it.</p>
+  <div class="portals">
+    <span class="portal">Zillow</span><span class="portal">Realtor.com</span><span class="portal">Apartments.com</span>
+    <span class="portal">Redfin</span><span class="portal">Zumper</span><span class="portal">Stellar MLS</span>
+    <span class="portal">verandahproperties.com</span>
+  </div>
+
+  <div class="box">
+    <h3>Two listing-data items we are correcting this week</h3>
+    <p>Our audit of the portal feeds turned up two fields worth fixing, and we are addressing both.</p>
+    <p><b>Included utilities.</b> The competing listing shows cable and internet as included in rent. Yours currently shows nothing included — even though Alora provides high-speed internet, lawn care, irrigation and exterior pressure washing as part of the community. A renter comparing the two side by side sees the neighbor as including internet and yours as not. That is a real disadvantage created by a data field rather than by anything about your home.</p>
+    <p><b>Property type.</b> Your home is listed in the MLS as a single-family residence while the comparable is listed as a townhouse. This broadens your exposure in some searches and removes you from others. We are reviewing which classification serves the listing better and will confirm next week.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Six</p>
+  <h2>What we track from here</h2>
+  <p>This report establishes the baseline. Each Friday you will receive an updated version showing the week's movement against these figures.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Measure</th><th class="num">Campaign to date</th></tr></thead>
+    <tbody>
+      <tr><td>Days marketed</td><td class="num">11</td></tr>
+      <tr><td>Asking rent</td><td class="num">$3,150</td></tr>
+      <tr><td>Inquiries received</td><td class="num">1</td></tr>
+      <tr><td>Inquiries per week</td><td class="num">0.6</td></tr>
+      <tr><td>Showings completed</td><td class="num">0</td></tr>
+      <tr><td>Applications received</td><td class="num">0</td></tr>
+      <tr><td>Competing homes listed</td><td class="num">1</td></tr>
+      <tr><td>Competitor asking rent</td><td class="num">$3,800</td></tr>
+      <tr><td>Comparable homes leased, this segment</td><td class="num">0</td></tr>
+      <tr><td>Price per square foot</td><td class="num">$1.55</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Seven</p>
+  <h2>Our work this coming week</h2>
+  <ul>
+    <li>Correcting the included-utilities field across every portal so the community-provided internet and lawn care are reflected, and confirming the property-type classification.</li>
+    <li>Monitoring 9305 Luminary daily for any price movement, so we respond before it undercuts us rather than after.</li>
+    <li>Re-verifying your listing on every portal, logged out, as part of the weekly cycle.</li>
+    <li>Auditing every amenity and feature field — garage, EV charger, laundry, pet policy, smart-home features. These drive the filters renters search with, and a field recorded incorrectly silently excludes the home from searches it should appear in.</li>
+    <li>Notifying the prospect who has already inquired the moment a price changes. A reduction gives someone who passed once a concrete reason to look again.</li>
+    <li>Watching for new Alora and Laureate Park listings entering the market, since more inventory in this community is likely as recent closings come online.</li>
+  </ul>
+</section>
+
+</div>
+
+<div class="rec">
+  <div class="wrap">
+    <h2>Our recommendation</h2>
+    <p>We recommend reducing to:</p>
+    <div class="big">$2,995</div>
+    <p style="margin-bottom:22px">A reduction of $155 per month, and a deliberate move below the $3,000 line.</p>
+
+    <p>Three reasons, in order of importance.</p>
+    <p><b>It puts your home in front of renters who cannot currently see it.</b> Every search capped at $3,000 excludes your listing today. That is likely the single largest pool of renters shopping this price range, and at $2,995 your home enters all of it. This is the entire argument for why $155 buys far more than $155 of value.</p>
+    <p><b>It makes the comparison with your neighbor decisive rather than merely favorable.</b> At $3,150 you are 17% below the competing listing. At $2,995 you are <b>$805 per month — 21% — below it, on a larger home.</b> A renter weighing the two does not need to deliberate. That is the position we want you in while you are the only real option in this community.</p>
+    <p><b>It acts while the listing is still new.</b> Eleven days in, your listing still carries the visibility a fresh listing gets, and a price change triggers a price-reduced flag that pushes it back to the top of recently-updated results. Making this move now compounds two advantages. Making it in October means correcting a stale listing with neither of them.</p>
+
+    <p style="margin-top:26px"><b>What waiting costs.</b> Every thirty days vacant costs $3,150 in rent you never recover — $105 for every day the home sits empty. A reduction costs a fraction of that:</p>
+    <div class="tscroll">
+    <table>
+      <thead><tr><th>New rent</th><th class="num">Cost over a 12-month lease</th><th class="num">Breaks even if it leases</th></tr></thead>
+      <tbody>
+        <tr class="hi"><td>$2,995</td><td class="num">$1,860</td><td class="num">18 days sooner</td></tr>
+        <tr><td>$3,095</td><td class="num">$660</td><td class="num">6 days sooner</td></tr>
+        <tr><td>$2,895</td><td class="num">$3,060</td><td class="num">29 days sooner</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Moving to $2,995 costs $1,860 across a twelve-month lease and pays for itself if it leases the home just eighteen days sooner. Given that eleven days have produced a single inquiry, eighteen days is a low bar.</p>
+    <p>We have deliberately not recommended $3,095 even though it costs less. It sits above $3,000 and therefore solves nothing — it would be a reduction that changes the number without changing who sees the home.</p>
+
+    <p style="margin-top:24px">This is a genuinely excellent property. Brand new, well finished, in one of the strongest communities in Lake Nona, and the only sensible option against a neighbor asking $800 more. None of that is in question. The issue is that the right renters are not currently being shown the home, and we would rather fix that in week two than in week seven.</p>
+    <p><b>Please let us know your decision by end of day Monday</b> so we can have the new pricing live across every portal before the weekend, when rental search activity is at its highest.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Curating Lake Nona's Finest Rental Portfolio</div>
+    <p><b>Verandah Properties, LLC</b><br>
+    Pamela Syvertson, Owner &amp; Broker · License CQ1048619 · <a href="tel:4078550331">407-855-0331</a></p>
+    <p style="font-size:.84rem;color:#8C877F;max-width:74ch">Market data sourced from Stellar MLS as of September 11, 2026, and is deemed reliable but not guaranteed. Comparable analysis reflects three-bedroom new-construction townhomes in the Alora and Laureate Park communities and is an opinion of value, not an appraisal. Portal visibility verified manually on the date shown.</p>
+  </div>
+</footer>
+
+</body>
+</html>
